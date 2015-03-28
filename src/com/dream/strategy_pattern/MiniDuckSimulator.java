@@ -6,6 +6,7 @@ import com.dream.strategy_pattern.duck.ModelDuck;
 import com.dream.strategy_pattern.fly.impl.FlyRocketPowered;
 
 /**
+ * 策略模式（StrategyPattern）
  * HeadFirstDesignPatterns
  * Created by Mr Su on 2015-3-26 11:31.
  */
