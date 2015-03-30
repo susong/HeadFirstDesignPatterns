@@ -26,9 +26,9 @@ public class StarbuzzCoffee {
         darkRoast = new Whip(darkRoast);
         System.out.println(darkRoast.getDescription() + DOLLAR + darkRoast.cost());
 
-        Beverage houseBlend = new HouseBlend();
-        houseBlend = new Soy(houseBlend);
+        Beverage houseBlend = new HouseBlend(Beverage.VENTI);
         houseBlend = new Mocha(houseBlend);
+        houseBlend = new Soy(houseBlend);
         houseBlend = new Whip(houseBlend);
         System.out.println(houseBlend.getDescription() + DOLLAR + houseBlend.cost());
     }

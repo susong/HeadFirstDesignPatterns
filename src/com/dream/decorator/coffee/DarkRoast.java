@@ -8,6 +8,12 @@ public class DarkRoast extends Beverage {
 
     public DarkRoast() {
         description = this.getClass().getSimpleName();
+        this.size = Beverage.GRANDE;
+    }
+
+    public DarkRoast(int size) {
+        description = this.getClass().getSimpleName();
+        this.size = size;
     }
 
     @Override
