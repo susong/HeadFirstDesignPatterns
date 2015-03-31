@@ -6,8 +6,14 @@ package com.dream.decorator.coffee;
  */
 public class Espresso extends Beverage {
 
-    public Espresso() {
+    public Espresso(){
         description = this.getClass().getSimpleName();
+        this.size = Beverage.GRANDE;
+    }
+
+    public Espresso(int size) {
+        description = this.getClass().getSimpleName();
+        this.size = size;
     }
 
 

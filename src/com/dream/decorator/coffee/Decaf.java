@@ -6,8 +6,14 @@ package com.dream.decorator.coffee;
  */
 public class Decaf extends Beverage {
 
-    public Decaf() {
+    public Decaf(){
         description = this.getClass().getSimpleName();
+        this.size = Beverage.GRANDE;
+    }
+
+    public Decaf(int size) {
+        description = this.getClass().getSimpleName();
+        this.size = size;
     }
 
     @Override

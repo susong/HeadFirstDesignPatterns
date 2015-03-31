@@ -6,8 +6,14 @@ package com.dream.decorator.coffee;
  */
 public class HouseBlend extends Beverage {
 
-    public HouseBlend() {
+    public HouseBlend(){
         description = this.getClass().getSimpleName();
+        this.size = Beverage.GRANDE;
+    }
+
+    public HouseBlend(int size) {
+        description = this.getClass().getSimpleName();
+        this.size = size;
     }
 
     @Override
