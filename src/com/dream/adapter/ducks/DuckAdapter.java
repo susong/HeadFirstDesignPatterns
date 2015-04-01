@@ -1,4 +1,4 @@
-package com.dream.adapter;
+package com.dream.adapter.ducks;
 
 import java.util.Random;
 
