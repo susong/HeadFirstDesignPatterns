@@ -1,5 +1,7 @@
 package com.dream.iterator;
 
+import java.util.Iterator;
+
 /**
  * HeadFirstDesignPatterns
  * Created by Su on 2015/4/1 0001 23:34.
@@ -25,7 +27,7 @@ public class Waitress {
 
     private void printMenu(Iterator iterator) {
         while (iterator.hasNext()) {
-            MenuItem menuItem = (MenuItem)iterator.next();
+            MenuItem menuItem = (MenuItem) iterator.next();
             System.out.print(menuItem.getName() + ", ");
             System.out.print(menuItem.getPrice() + " -- ");
             System.out.println(menuItem.getDescription());

@@ -1,6 +1,7 @@
 package com.dream.iterator;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 /**
  * HeadFirstDesignPatterns
@@ -41,6 +42,6 @@ public class PancakeHouseMenu implements Menu {
 
     @Override
     public Iterator createIterator() {
-        return new PancakeHouseIterator(menuItems);
+        return menuItems.iterator();
     }
 }
